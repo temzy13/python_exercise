@@ -1,0 +1,7 @@
+[INFO] Server started successfully
+[WARNING] Low available memory
+[ERROR] Database connection failed
+[ERROR] Timeout while connecting to API
+[INFO] Authenticated user
+[ERROR] File not found: config.yaml
+[ERROR] Database connection failed
