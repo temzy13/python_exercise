@@ -6,7 +6,7 @@ def log_analyzer(file_name):
     }
 
     try:
-        with open(file_name, 'r') as log_file:
+        with open(file_name) as log_file:
             lines = log_file.readlines()
 
         for line in lines:
