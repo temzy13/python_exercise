@@ -6,11 +6,9 @@ def log_analyzer(file_name):
     }
 
     try:
-        # Open the log file and read lines
         with open(file_name, 'r') as log_file:
             lines = log_file.readlines()
 
-        # Loop through each line to classify it
         for line in lines:
             if 'ERROR' in line:
                 log_dict['ERROR'].append(line.strip())
@@ -29,12 +27,10 @@ def log_analyzer(file_name):
         return None
 
 
-# Example usage
 if __name__ == "__main__":
     log_file_name = 'server_logs.txt'
     result = log_analyzer(log_file_name)
 
-    # Print the result
     if result is not None:
         print("Log Analysis Report:")
         for key, value in result.items():
