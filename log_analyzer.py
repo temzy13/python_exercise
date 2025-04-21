@@ -21,10 +21,6 @@ def log_analyzer(file_name):
 
     except FileNotFoundError:
         print(f"Error: The file '{file_name}' was not found.")
-        return None
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        return None
 
 
 if __name__ == "__main__":
