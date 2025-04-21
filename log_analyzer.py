@@ -1,5 +1,5 @@
 def log_analyzer(file_name):
-    log_dict = {
+    log_dictionary = {
         'ERROR': [],
         'WARNING': [],
         'INFO': []
@@ -11,11 +11,11 @@ def log_analyzer(file_name):
 
         for line in lines:
             if 'ERROR' in line:
-                log_dict['ERROR'].append(line.strip())
+                log_dictionary['ERROR'].append(line.strip())
             elif 'WARNING' in line:
-                log_dict['WARNING'].append(line.strip())
+                log_dictionary['WARNING'].append(line.strip())
             elif 'INFO' in line:
-                log_dict['INFO'].append(line.strip())
+                log_dictionary['INFO'].append(line.strip())
 
         return log_dict
 
